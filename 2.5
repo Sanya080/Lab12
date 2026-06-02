@@ -1,0 +1,13 @@
+import random
+import time
+def complexity_analyzer(sort_func, sizes):
+    for a in sizes:
+        b = []
+        for c in range(a):
+            b.append(random.randint(1, 1000))
+        d = time.perf_counter()
+        sort_func(b)
+        e = time.perf_counter()
+        print("Розмір:", a)
+        print("Час:", e - d)
+
