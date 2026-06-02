@@ -1,0 +1,10 @@
+def stack_size(stack):
+    a = []
+    b = 0
+    while stack:
+        a.append(stack.pop())
+        b += 1
+    while a:
+        stack.append(a.pop())
+    return b
+
