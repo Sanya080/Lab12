@@ -1,0 +1,9 @@
+def find_min_max(arr):
+    a = arr[0]
+    b = arr[0]
+    for c in arr:
+        if c < a:
+            a = c
+        if c > b:
+            b = c
+    return (a, b)
