@@ -1,0 +1,13 @@
+def sort_even_numbers(numbers):
+    a = []
+    for b in numbers:
+        if b % 2 == 0:
+            a.append(b)
+    for c in range(len(a)):
+        d = c
+        for e in range(c + 1, len(a)):
+            if a[e] < a[d]:
+                d = e
+        a[c], a[d] = a[d], a[c]
+    return a
+
