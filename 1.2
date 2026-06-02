@@ -1,0 +1,10 @@
+def is_palindrome(text):
+    a = text.lower().replace(" ", "")
+    b = []
+    for c in a:
+        b.append(c)
+    d = ""
+    while b:
+        d = d + b.pop()
+    return a == d
+
