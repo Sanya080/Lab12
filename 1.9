@@ -1,0 +1,14 @@
+def bubble_sort_opt(arr):
+    a = arr.copy()
+    b = 0
+    for c in range(len(a) - 1):
+        d = False
+        b += 1
+        for e in range(len(a) - 1 - c):
+            if a[e] > a[e + 1]:
+                a[e], a[e + 1] = a[e + 1], a[e]
+                d = True
+        if not d:
+            break
+    return (a, b)
+
