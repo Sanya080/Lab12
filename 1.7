@@ -1,0 +1,8 @@
+def linear_search_count(arr, target):
+    a = 0
+    for b in range(len(arr)):
+        a += 1
+        if arr[b] == target:
+            return (b, a)
+    return (-1, a)
+
