@@ -1,0 +1,14 @@
+def binary_search_steps(arr, target):
+    a = 0
+    b = len(arr) - 1
+    c = []
+    while a <= b:
+        d = (a + b) // 2
+        c.append(d)
+        if arr[d] == target:
+            return (c, d)
+        if arr[d] < target:
+            a = d + 1
+        else:
+            b = d - 1
+    return (c, -1)
