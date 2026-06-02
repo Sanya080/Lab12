@@ -1,0 +1,8 @@
+def hybrid_sort(arr, threshold=10):
+    a = arr.copy()
+    for b in range(len(a)):
+        for c in range(b + 1, len(a)):
+            if a[b] > a[c]:
+                a[b], a[c] = a[c], a[b]
+    return a
+
