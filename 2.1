@@ -1,0 +1,17 @@
+def rpn_calculator(expression):
+    a = []
+    for b in expression.split():
+        if b not in "+-*/":
+            a.append(int(b))
+        else:
+            c = a.pop()
+            d = a.pop()
+            if b == "+":
+                a.append(d + c)
+            elif b == "-":
+                a.append(d - c)
+            elif b == "*":
+                a.append(d * c)
+            elif b == "/":
+                a.append(d / c)
+    return a[0]
